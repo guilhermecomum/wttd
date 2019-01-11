@@ -18,7 +18,7 @@ def subscribe(request):
                 'Confirmação de inscrição',
                 body,
                 'guerrinha@comum.org',
-                ['contato@eventex.com.br', form.cleaned_data['email']]
+                ['guerrinha@mailinator.com', form.cleaned_data['email']]
             )
 
             messages.success(request, 'Inscrição realizada com sucesso!')
