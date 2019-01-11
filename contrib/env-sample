@@ -1,4 +1,4 @@
-SECRET_KEY=
+SECRET_KEY=THIS_IS_NOT_A_GOOD_SECRET
 DEBUG=True
 EMAIL_BACKEND=django.core.mail.backends.console.EmailBackend
 EMAIL_HOST=localhost

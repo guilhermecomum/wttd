@@ -25,7 +25,7 @@ python manage.py test
 
 1. Crie uma instância no Heroku
 2. Envie as configurações para o Heroku
-3. Defina uma `SECRETE_KEY` segura para instância
+3. Defina uma `SECRET_KEY` segura para instância
 4. Defina `DEBUG=False`
 5. Configure o serviço de email.
 6. Envie o código para o heroku
