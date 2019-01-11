@@ -29,6 +29,8 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = ['*']
 
+DEFAULT_FROM_EMAIL = 'guerrinha@comum.org'
+
 # Application definition
 
 INSTALLED_APPS = [
