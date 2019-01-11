@@ -13,7 +13,8 @@ class SubscribeGet(TestCase):
 
     def test_template(self):
         """Must use subscription/subscription_form.html"""
-        self.assertTemplateUsed(self.res, 'subscriptions/subscription_form.html')
+        self.assertTemplateUsed(
+            self.res, 'subscriptions/subscription_form.html')
 
     def test_html(self):
         """Html must contain input tags"""
@@ -37,10 +38,13 @@ class SubscribeGet(TestCase):
         self.assertIsInstance(form, SubscriptionForm)
 
 
-
 class SubscribePostValid(TestCase):
     def setUp(self):
-        data = dict(name='Henrique Bastos', cpf='12345678901', email='henrique@bastos.net', phone='21-99618-6180')
+        data = dict(
+            name='Henrique Bastos',
+            cpf='12345678901',
+            email='henrique@bastos.net',
+            phone='21-99618-6180')
         self.res = self.client.post('/inscricao/', data)
 
     def test_post(self):

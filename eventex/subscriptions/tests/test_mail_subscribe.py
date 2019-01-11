@@ -4,7 +4,11 @@ from django.test import TestCase
 
 class SubscribePostValid(TestCase):
     def setUp(self):
-        data = dict(name='Henrique Bastos', cpf='12345678901', email='henrique@bastos.net', phone='21-99618-6180')
+        data = dict(
+            name='Henrique Bastos',
+            cpf='12345678901',
+            email='henrique@bastos.net',
+            phone='21-99618-6180')
         self.client.post('/inscricao/', data)
         self.email = mail.outbox[0]
 
