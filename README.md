@@ -1,6 +1,9 @@
 # Eventex
-
 Sistema de eventos
+
+[![Build Status](https://travis-ci.org/guilhermecomum/wttd.svg?branch=master)](https://travis-ci.org/guilhermecomum/wttd)
+[![Maintainability](https://api.codeclimate.com/v1/badges/7a2342b397b4cc71dedd/maintainability)](https://codeclimate.com/github/guilhermecomum/wttd/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/7a2342b397b4cc71dedd/test_coverage)](https://codeclimate.com/github/guilhermecomum/wttd/test_coverage)
 
 ## Desenvolvendo
 
