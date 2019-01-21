@@ -49,8 +49,9 @@ class SubscribePostValid(TestCase):
         self.res = self.client.post('/inscricao/', data)
 
     def test_post(self):
-        """Valid POST should redirect to /inscricao/1"""
-        self.assertRedirects(self.res, '/inscricao/1/')
+        """Valid POST should redirect to /inscricao/{uuid}"""
+        s = Subscription.objects.get(cpf='12345678901')
+        self.assertRedirects(self.res, '/inscricao/{}/'.format(s.uuid))
 
     def test_send_subscribe_email(self):
         self.assertEqual(1, len(mail.outbox))

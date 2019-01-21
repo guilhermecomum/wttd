@@ -10,7 +10,7 @@ class SubscriptionDetailGet(TestCase):
             email='henrique@bastos.net',
             phone='21-99618-6180'
         )
-        self.res = self.client.get('/inscricao/{}/'.format(self.obj.pk))
+        self.res = self.client.get('/inscricao/{}/'.format(self.obj.uuid))
 
     def test_get(self):
         self.assertEqual(200, self.res.status_code)

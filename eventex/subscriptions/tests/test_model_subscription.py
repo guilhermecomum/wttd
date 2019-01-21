@@ -1,3 +1,4 @@
+import uuid
 from datetime import datetime
 from django.test import TestCase
 from eventex.subscriptions.models import Subscription
@@ -22,3 +23,7 @@ class SubscriptionModelTest(TestCase):
 
     def test_str(self):
         self.assertEqual('Henrique Bastos', str(self.obj))
+
+    def test_uuid(self):
+        """Subscription must have an auto uuid attr."""
+        self.assertIsInstance(self.obj.uuid, uuid.UUID)
