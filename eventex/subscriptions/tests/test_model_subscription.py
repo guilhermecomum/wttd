@@ -27,3 +27,7 @@ class SubscriptionModelTest(TestCase):
     def test_uuid(self):
         """Subscription must have an auto uuid attr."""
         self.assertIsInstance(self.obj.uuid, uuid.UUID)
+
+    def test_paid_default_to_False(self):
+        """By default paid must be False."""
+        self.assertEqual(False, self.obj.paid)
